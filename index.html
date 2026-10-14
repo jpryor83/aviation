@@ -1,312 +1,408 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-  <!-- Site made with Mobirise Website Builder v4.8.2, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.8.2, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/arrow-overview2-128x30.png" type="image/x-icon">
-  <meta name="description" content="">
-  <title>Home</title>
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Appalachian Aviation Adventures | Flight Instruction near Boone, NC</title>
+<meta name="description" content="Flight instruction near Boone, North Carolina. Discovery flights, flight reviews, and private and commercial pilot training at airports across Western North Carolina and East Tennessee.">
+<meta name="theme-color" content="#1d3149">
+<meta property="og:title" content="Appalachian Aviation Adventures">
+<meta property="og:description" content="Flight instruction in the High Country. Discovery flights, flight reviews, and pilot training near Boone, NC.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231d3149'/%3E%3Ccircle cx='32' cy='38' r='14' fill='%23f5c518'/%3E%3Cpath d='M0 52 L18 34 L30 46 L42 30 L64 52 V64 H0Z' fill='%234b6a88'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #14202e;
+    --navy: #1d3149;
+    --ridge: #3f6179;
+    --haze: #8fa9c0;
+    --paper: #f4f7fa;
+    --line: #c9d5df;
+    --taxi: #f5c518;
+    --link: #1f4f7a;
+
+    --display: "Archivo", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+    --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 1rem; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.125rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: var(--display); font-stretch: 125%; line-height: 1.05; margin: 0; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--link); }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 3px solid var(--taxi);
+    outline-offset: 3px;
+  }
+  .wrap { width: min(1100px, 100% - 2.5rem); margin-inline: auto; }
+  .skip {
+    position: absolute; left: -999px; top: 0; background: var(--taxi); color: var(--ink);
+    padding: .6rem 1rem; z-index: 20; font-family: var(--display); font-weight: 700;
+  }
+  .skip:focus { left: 0; }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-block; font-family: var(--display); font-stretch: 112%;
+    font-weight: 700; font-size: 1rem; text-decoration: none;
+    padding: .95rem 1.5rem; border-radius: 3px; border: 2px solid transparent;
+    cursor: pointer; line-height: 1.2;
+  }
+  .btn-primary { background: var(--taxi); color: var(--ink); }
+  .btn-primary:hover { background: #ffd43b; }
+  .btn-ghost { color: #fff; border-color: rgba(255,255,255,.65); }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: linear-gradient(180deg, #162840 0%, #2a4766 38%, #6f8fae 68%, #c8d3da 88%, #ecd9b4 100%);
+    padding-bottom: clamp(11rem, 30vw, 26rem);
+  }
+  .hero-art {
+    position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+    width: 100%; min-width: 1000px; height: auto; overflow: visible;
+    pointer-events: none;
+  }
+  .hero > header, .hero .hero-copy { position: relative; z-index: 2; }
+
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1.5rem; padding-block: 1.4rem;
+  }
+  .brand {
+    font-family: var(--display); font-stretch: 125%; font-weight: 800;
+    color: #fff; text-decoration: none; line-height: 1.02;
+    font-size: clamp(.95rem, 2.6vw, 1.15rem);
+  }
+  .brand span { display: block; font-stretch: 85%; font-weight: 600; font-size: .78em; color: var(--taxi); letter-spacing: .02em; }
+  nav ul { display: flex; gap: 1.6rem; list-style: none; margin: 0; padding: 0; align-items: center; }
+  nav a {
+    color: #fff; text-decoration: none; font-family: var(--display); font-stretch: 105%;
+    font-weight: 600; font-size: .98rem;
+  }
+  nav a:hover { color: var(--taxi); }
+  nav .phone { color: var(--taxi); }
+  @media (max-width: 720px) { nav li.hide-sm { display: none; } }
+
+  .hero-copy { padding-top: clamp(3rem, 9vw, 6.5rem); }
+  .hero-copy > * { max-width: 46rem; }
+  .hero h1 { font-size: clamp(2.7rem, 8.2vw, 5.6rem); font-weight: 850; letter-spacing: -.01em; }
+  .hero .lede { font-size: clamp(1.1rem, 2.4vw, 1.35rem); max-width: 34rem; margin: 1.6rem 0 2rem; color: #e8eef3; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: .9rem; }
+
+  /* The one moment of motion: a plane climbs through the ridgelines and leaves a trail. */
+  @media (prefers-reduced-motion: reduce) { .plane, .trail { display: none; } }
+
+  /* ---------- Sections ---------- */
+  section { padding-block: clamp(3.5rem, 8vw, 6rem); }
+  h2 { font-size: clamp(1.9rem, 4.6vw, 3rem); font-weight: 800; margin-bottom: 2.2rem; }
+
+  /* Services */
+  .services { background: var(--paper); }
+  .svc { display: grid; gap: .6rem 3rem; padding-block: 1.7rem; border-top: 2px solid var(--ink); }
+  .svc:last-of-type { border-bottom: 2px solid var(--ink); }
+  .svc h3 { font-size: clamp(1.35rem, 3vw, 1.8rem); font-weight: 750; }
+  .svc p { margin: 0; max-width: 38rem; }
+  @media (min-width: 820px) { .svc { grid-template-columns: 1fr 1.6fr; } }
+  .note { margin-top: 1.6rem; color: #41505f; font-size: 1rem; max-width: 40rem; }
+
+  /* Pricing */
+  .pricing { background: var(--navy); color: #fff; }
+  .pricing h2 { color: #fff; }
+  .price-grid { display: grid; gap: 3rem; }
+  @media (min-width: 860px) { .price-grid { grid-template-columns: 1fr 1.1fr; gap: 5rem; align-items: start; } }
+  .rate { font-family: var(--display); font-stretch: 125%; font-weight: 850; font-size: clamp(4rem, 12vw, 7rem); line-height: .95; color: var(--taxi); }
+  .rate small { font-size: .3em; font-weight: 700; color: #fff; font-stretch: 105%; margin-left: .2rem; }
+  .rate-label { font-family: var(--display); font-stretch: 105%; font-weight: 600; margin: .6rem 0 1.4rem; font-size: 1.1rem; }
+  .price-grid p { color: #dbe5ee; max-width: 30rem; }
+  .steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+  .steps li {
+    counter-increment: step; position: relative; padding: 0 0 1.8rem 3.4rem;
+    border-left: 2px solid rgba(255,255,255,.25); margin-left: 1.1rem;
+  }
+  .steps li:last-child { padding-bottom: 0; border-left-color: transparent; }
+  .steps li::before {
+    content: counter(step); position: absolute; left: -1.2rem; top: -.1rem;
+    width: 2.2rem; height: 2.2rem; border-radius: 50%; background: var(--taxi); color: var(--ink);
+    font-family: var(--display); font-weight: 800; display: grid; place-items: center;
+  }
+  .steps h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: .3rem; font-stretch: 112%; }
+  .steps p { margin: 0; }
+
+  /* About */
+  .about-grid { display: grid; gap: 2.5rem; }
+  @media (min-width: 860px) { .about-grid { grid-template-columns: 1.3fr 1fr; gap: 5rem; } }
+  .creds { margin: 0; padding: 0; list-style: none; border-top: 2px solid var(--ink); align-self: start; }
+  .creds li { padding: .9rem 0; border-bottom: 1px solid var(--line); font-family: var(--display); font-stretch: 105%; font-weight: 600; }
+  .creds li span { display: block; font-family: var(--body); font-weight: 400; font-size: .95rem; color: #41505f; }
+
+  /* Contact */
+  .contact { background: #e4ecf2; }
+  .contact-grid { display: grid; gap: 3rem; }
+  @media (min-width: 860px) { .contact-grid { grid-template-columns: 1fr 1.2fr; gap: 5rem; } }
+  .contact dl { margin: 0; }
+  .contact dt { font-family: var(--display); font-stretch: 105%; font-weight: 700; margin-top: 1.4rem; }
+  .contact dt:first-child { margin-top: 0; }
+  .contact dd { margin: .15rem 0 0; }
+  .contact dd a { font-size: 1.25rem; }
+  form { display: grid; gap: 1.1rem; }
+  label { display: grid; gap: .35rem; font-family: var(--display); font-stretch: 105%; font-weight: 600; font-size: .98rem; }
+  input, select, textarea {
+    font: inherit; font-family: var(--body); font-size: 1.05rem; color: var(--ink);
+    padding: .75rem .85rem; border: 2px solid #9fb2c2; border-radius: 3px; background: #fff; width: 100%;
+  }
+  textarea { min-height: 8rem; resize: vertical; }
+  .two { display: grid; gap: 1.1rem; }
+  @media (min-width: 560px) { .two { grid-template-columns: 1fr 1fr; } }
+  .form-note { font-size: .95rem; color: #41505f; margin: 0; }
+  form .btn { justify-self: start; }
+
+  /* Footer */
+  footer { background: var(--ink); color: #b9c7d4; padding-block: 2rem; font-size: .95rem; }
+  footer p { margin: 0; }
+</style>
 </head>
+
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-  <section class="header4 cid-rdRCIfqBk5" data-bg-video="https://www.youtube.com/embed/srbiPGXzZJU?rel=0&amp;showinfo=0&amp;autoplay=0&amp;loop=0" id="header4-5">
-
-    
-
-    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(255, 255, 255);">
+<div class="hero">
+  <header class="wrap">
+    <div class="topbar">
+      <a class="brand" href="#top" id="top">Appalachian<br>Aviation Adventures<span>Flight instruction, Boone NC</span></a>
+      <nav aria-label="Main">
+        <ul>
+          <li class="hide-sm"><a href="#services">Services</a></li>
+          <li class="hide-sm"><a href="#pricing">Pricing</a></li>
+          <li class="hide-sm"><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="hide-sm"><a class="phone" href="tel:+18284060709">828-406-0709</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="media-content col-md-10">
-                <h1 class="mbr-section-title align-center mbr-white pb-3 mbr-bold mbr-fonts-style display-2">appalachian aviation adventures</h1>
-                
-                <div class="mbr-text align-center mbr-white pb-3">
-                    <p class="mbr-text mbr-fonts-style display-5">
-                        providing aviation services in the high country.</p>
-                </div>
-                <div class="mbr-section-btn align-center"><a class="btn btn-md btn-black display-4" href="index.html#pricing-tables2-9">SERVICES</a>
-                    <a class="btn btn-md btn-black-outline display-4" href="index.html#form1-7">CONTACT</a></div>
-            </div>
-            <div class="mbr-figure pt-5">
-                <img src="assets/images/arrow-overview2-510x119.png" alt="Mobirise" title="" style="width: 85%;">
-            </div>
+  <div class="wrap hero-copy">
+    <h1>Learn to fly in the High Country.</h1>
+    <p class="lede">Flight instruction from Boone, North Carolina, at airports across Western North Carolina and East Tennessee.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#contact" data-topic="Discovery flight">Book a discovery flight</a>
+      <a class="btn btn-ghost" href="tel:+18284060709">Call 828-406-0709</a>
+    </div>
+  </div>
+
+  <!-- Ridgelines, a rising sun, and one plane. Pure SVG, no image files needed. -->
+  <svg class="hero-art" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMax meet" role="img" aria-label="Layered blue mountain ridgelines at sunrise">
+    <defs>
+      <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#f5c518" stop-opacity=".55"/>
+        <stop offset="1" stop-color="#f5c518" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <circle cx="1060" cy="80" r="190" fill="url(#glow)"/>
+    <circle cx="1060" cy="80" r="62" fill="#f5c518"/>
+
+    <path fill="#8fa9c0" stroke="#8fa9c0" stroke-width="5" stroke-linejoin="round" d="M0,120 L80,95 L160,110 L260,60 L340,100 L430,70 L520,115 L640,55 L740,100 L840,85 L940,120 L1060,80 L1160,110 L1260,70 L1350,105 L1440,85 L1440,360 L0,360Z"/>
+    <path fill="#6d8aa6" stroke="#6d8aa6" stroke-width="5" stroke-linejoin="round" d="M0,190 L120,150 L210,175 L330,120 L430,170 L560,135 L660,185 L780,140 L880,180 L1000,150 L1100,190 L1220,140 L1330,175 L1440,150 L1440,360 L0,360Z"/>
+    <path fill="#4b6a88" stroke="#4b6a88" stroke-width="5" stroke-linejoin="round" d="M0,245 L100,215 L220,240 L340,195 L450,235 L580,205 L700,245 L820,210 L940,240 L1060,215 L1180,250 L1300,215 L1440,235 L1440,360 L0,360Z"/>
+    <path fill="#2e4a66" stroke="#2e4a66" stroke-width="5" stroke-linejoin="round" d="M0,300 L140,275 L260,295 L400,265 L520,295 L660,270 L780,300 L920,275 L1060,305 L1200,280 L1320,300 L1440,285 L1440,360 L0,360Z"/>
+    <path fill="#1d3149" stroke="#1d3149" stroke-width="5" stroke-linejoin="round" d="M0,345 L200,332 L380,342 L560,330 L760,344 L960,332 L1160,343 L1300,334 L1440,340 L1440,360 L0,360Z"/>
+
+    <!-- Contrail and plane share one path so they move together -->
+    <path id="flight" d="M-80,215 C250,150 520,120 800,60 C1050,10 1300,-90 1560,-190" fill="none"/>
+    <path class="trail" d="M-80,215 C250,150 520,120 800,60 C1050,10 1300,-90 1560,-190"
+          fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".55"
+          pathLength="1" stroke-dasharray="1" stroke-dashoffset="1">
+      <animate attributeName="stroke-dashoffset" from="1" to="0" begin="0.6s" dur="9s" fill="freeze"
+               calcMode="spline" keyTimes="0;1" keySplines=".3 0 .5 1"/>
+      <animate attributeName="opacity" from=".55" to="0" begin="7s" dur="6s" fill="freeze"/>
+    </path>
+    <g class="plane" fill="#fff" opacity="0">
+      <set attributeName="opacity" to="1" begin="0.6s" fill="freeze"/>
+      <animateMotion dur="9s" begin="0.6s" rotate="auto" fill="freeze"
+                     calcMode="spline" keyTimes="0;1" keySplines=".3 0 .5 1">
+        <mpath href="#flight"/>
+      </animateMotion>
+      <!-- small high-wing airplane, nose pointing right -->
+      <g transform="scale(1.15)">
+        <path d="M-34,-1 L-39,-15 L-31,-15 L-23,-3 Z"/>
+        <path d="M-34,0 L-26,-4 L18,-7 Q30,-6 36,0 Q30,5 18,6 L-30,4 Z"/>
+        <rect x="-9" y="-11" width="24" height="3" rx="1.5"/>
+        <rect x="36" y="-7" width="2" height="14" rx="1"/>
+        <path d="M-3,-8 L-1,-1 M9,-8 L7,-1" stroke="#fff" stroke-width="1.5"/>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<main id="main">
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <h2>What I teach</h2>
+
+      <div class="svc">
+        <h3>Discovery flights</h3>
+        <p>Your first time at the controls. We fly a short lesson in an airplane you provide, and I walk you through how a flight comes together, from preflight to landing. No experience needed.</p>
+      </div>
+      <div class="svc">
+        <h3>Flight reviews</h3>
+        <p>A flight review is required every 24 calendar months to act as pilot in command. It includes at least an hour of ground time and an hour in the air, in your airplane, tailored to the way you actually fly.</p>
+      </div>
+      <div class="svc">
+        <h3>Private and commercial training</h3>
+        <p>Training toward your private or commercial pilot certificate in single-engine airplanes, from your first lesson through checkride preparation.</p>
+      </div>
+
+      <p class="note">I don't offer instrument instruction. I'm not a CFII, so for instrument training you'll want a different instructor.</p>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="wrap price-grid">
+      <div>
+        <h2>Simple pricing</h2>
+        <div class="rate">$50<small>per hour</small></div>
+        <p class="rate-label">For my instruction time</p>
+        <p>You bring the airplane, whether you own it or rent it. Aircraft rental and fuel are separate and go to the owner or the flight school, not to me.</p>
+      </div>
+
+      <ol class="steps">
+        <li>
+          <h3>Get in touch</h3>
+          <p>Tell me what you want to do and where you're located. A call or an email both work.</p>
+        </li>
+        <li>
+          <h3>Pick an airport and an airplane</h3>
+          <p>We choose a nearby airport and sort out an airplane, yours or a rental.</p>
+        </li>
+        <li>
+          <h3>Fly</h3>
+          <p>We brief on the ground, fly, and debrief afterward so you know what to work on next.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <h2>Your instructor</h2>
+        <p>I'm John, a commercial pilot with instrument and multi-engine ratings, and a certificated flight instructor for single-engine airplanes.</p>
+        <p>I teach out of airports in and around Boone and across Western North Carolina and East Tennessee, where the terrain, density altitude, and weather give you plenty to learn from.</p>
+        <!-- Add a photo or a few sentences about your own flying background here when you're ready. -->
+      </div>
+      <ul class="creds">
+        <li>Flight instructor<span>Airplane, single-engine</span></li>
+        <li>Commercial pilot</li>
+        <li>Instrument rating<span>Held personally; instrument instruction is not offered</span></li>
+        <li>Multi-engine rating</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Get in touch</h2>
+        <dl>
+          <dt>Email</dt>
+          <dd><a href="mailto:john@appaviationadventures.com">john@appaviationadventures.com</a></dd>
+          <dt>Phone</dt>
+          <dd><a href="tel:+18284060709">828-406-0709</a></dd>
+          <dt>Where I fly</dt>
+          <dd>Boone, North Carolina, and airports across Western North Carolina and East Tennessee.</dd>
+        </dl>
+      </div>
+
+      <form id="contact-form" novalidate>
+        <div class="two">
+          <label>Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>Phone (optional)
+            <input type="tel" name="phone" autocomplete="tel">
+          </label>
         </div>
+        <label>Your email
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>What are you interested in?
+          <select name="topic" id="topic">
+            <option>Discovery flight</option>
+            <option>Flight review</option>
+            <option>Private or commercial training</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Message
+          <textarea name="message" placeholder="Where are you located, and do you have an airplane in mind?"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p class="form-note" id="form-note">This opens your email app with your message ready to send.</p>
+      </form>
     </div>
-</section>
+  </section>
 
-<section class="engine"><a href="https://mobiri.se/c">free website builder</a></section><section class="cid-rdRGnqdYCw" id="pricing-tables2-9">
+  <!--
+    RESOURCES SECTION (hidden until you have the links)
+    Your old site listed: Recommended Gear, MZeroA YouTube, Written Test Practice Exams, Student Textbooks.
+    When you have the web addresses, send them to me and I'll add this back as a section.
+  -->
+</main>
 
-    
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Appalachian Aviation Adventures. Boone, North Carolina.</p>
+  </div>
+</footer>
 
-    
+<script>
+  // Pre-select the topic when a button points at the form with a data-topic.
+  document.querySelectorAll('[data-topic]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var sel = document.getElementById('topic');
+      if (sel) sel.value = el.getAttribute('data-topic');
+    });
+  });
 
-    <div class="container">
-        <div class="media-container-row">
-
-            <div class="plan col-12 mx-2 my-2 justify-content-center favorite col-lg-3">
-                <div class="plan-header text-center pt-5">
-                    <h3 class="plan-title mbr-fonts-style display-5">
-                        Flight Time</h3>
-                    <div class="plan-price">
-                        <span class="price-value mbr-fonts-style display-5">
-                            $
-                        </span>
-                        <span class="price-figure mbr-fonts-style display-1">
-                            50</span>
-                        <small class="price-term mbr-fonts-style display-7">
-                            per hour</small>
-                    </div>
-                </div>
-                <div class="plan-body">
-                    <div class="plan-list align-center">
-                        <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                            <li class="list-group-item">
-                                Mobirise is perfect for non-techies who are not familiar with web development.
-                            </li>
-                            <li class="list-group-item">
-                                5 GB Bandwidth
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="plan col-12 mx-2 my-2 justify-content-center col-lg-3">
-                <div class="plan-header text-center pt-5">
-                    <h3 class="plan-title mbr-fonts-style display-5">
-                        Ground School</h3>
-                    <div class="plan-price">
-                        <span class="price-value mbr-fonts-style display-5">
-                            $
-                        </span>
-                        <span class="price-figure mbr-fonts-style display-1">
-                            100</span>
-                        <small class="price-term mbr-fonts-style display-7">
-                            per hour</small>
-                    </div>
-                </div>
-                <div class="plan-body">
-                    <div class="plan-list align-center">
-                        <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                            <li class="list-group-item">
-                                Mobirise is perfect for non-techies who are not familiar with web development.
-                            </li>
-                            <li class="list-group-item">
-                                10 GB Bandwidth
-                            </li>
-                            <li class="list-group-item">
-                                Free Domain
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="plan col-12 mx-2 my-2 justify-content-center col-lg-3">
-                <div class="plan-header text-center pt-5">
-                    <h3 class="plan-title mbr-fonts-style display-5">
-                        Chartered Flights</h3>
-                    <div class="plan-price">
-                        <span class="price-value mbr-fonts-style display-5">
-                            $
-                        </span>
-                        <span class="price-figure mbr-fonts-style display-1">300</span>
-                        <small class="price-term mbr-fonts-style display-7">
-                            per hour</small>
-                    </div>
-                </div>
-                <div class="plan-body">
-                    <div class="plan-list align-center">
-                        <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                            <li class="list-group-item">
-                                Mobirise is perfect for non-techies who are not familiar with web development.
-                            </li>
-                            <li class="list-group-item">
-                                15 GB Bandwidth
-                            </li>
-                            <li class="list-group-item">
-                                Free Domain
-                            </li>
-                            <li class="list-group-item">
-                                Backup
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="plan col-12 mx-2 my-2 justify-content-center col-lg-3">
-                <div class="plan-header text-center pt-5">
-                    <h3 class="plan-title mbr-fonts-style display-5">
-                        Ultimate
-                    </h3>
-                    <div class="plan-price">
-                        <span class="price-value mbr-fonts-style display-5">
-                            $
-                        </span>
-                        <span class="price-figure mbr-fonts-style display-1">350</span>
-                        <small class="price-term mbr-fonts-style display-7">
-                            per hour
-                        </small>
-                    </div>
-                </div>
-                <div class="plan-body">
-                    <div class="plan-list align-center">
-                        <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                            <li class="list-group-item">
-                                Mobirise is perfect for non-techies who are not familiar with web development.
-                            </li>
-                            <li class="list-group-item">
-                                10 GB Bandwidth
-                            </li>
-                            <li class="list-group-item">
-                                Free Domain
-                            </li>
-                            <li class="list-group-item">
-                                Backup
-                            </li>
-                            <li class="list-group-item">
-                                24/7 Support
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section form1 cid-rdRELfvPpR" id="form1-7">
-
-    
-
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-12 col-lg-8">
-                <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
-                    CONTACT FORM
-                </h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">
-                    Easily add subscribe and contact forms without any server-side integration.
-                </h3>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="media-container-column col-lg-8" data-form-type="formoid">
-                    <div data-form-alert="" hidden="">
-                        Thanks for filling out the form!
-                    </div>
-            
-                    <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="Ti2X7qCsJOojZeHH7vh46dHAIWxyTOCrNiRlIT8Yubio2l6JO64EH3yT7M57f08Li8tJ/B9kCIZGN044QNeFS3kFjNHAL7uTj0P/s2KR/TZ5SsPD0S4DcUoBYUNMkrXj" data-form-field="Email">
-                        <div class="row row-sm-offset">
-                            <div class="col-md-4 multi-horizontal" data-for="name">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="name-form1-7">Name</label>
-                                    <input type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-7">
-                                </div>
-                            </div>
-                            <div class="col-md-4 multi-horizontal" data-for="email">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="email-form1-7">Email</label>
-                                    <input type="email" class="form-control" name="email" data-form-field="Email" required="" id="email-form1-7">
-                                </div>
-                            </div>
-                            <div class="col-md-4 multi-horizontal" data-for="phone">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-7">Phone</label>
-                                    <input type="tel" class="form-control" name="phone" data-form-field="Phone" id="phone-form1-7">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group" data-for="message">
-                            <label class="form-control-label mbr-fonts-style display-7" for="message-form1-7">Message</label>
-                            <textarea type="text" class="form-control" name="message" rows="7" data-form-field="Message" id="message-form1-7"></textarea>
-                        </div>
-            
-                        <span class="input-group-btn"><button href="" type="submit" class="btn btn-form btn-primary-outline display-4">SEND FORM</button></span>
-                    </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="cid-rdRIqXndxq" id="footer1-a">
-
-    
-
-    
-
-    <div class="container">
-        <div class="media-container-row content text-white">
-            <div class="col-12 col-md-3">
-                <div class="media-wrap">
-                    <a href="https://mobirise.com/">
-                        <img src="assets/images/arrow-overview2-1-510x119.png" alt="Mobirise" title="">
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3">Resources:</h5>
-                <p class="mbr-text">&nbsp;<br>Recomended Gear<br><br>MZeroA Youtube<br><br>Written Test <br>Practice Exams<br><br>Student<br>Textbooks<br></p>
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3">
-                    Contacts
-                </h5>
-                <p class="mbr-text">
-                    Email: support@mobirise.com
-                    <br>Phone: +1 (0) 000 0000 001
-                    <br>Fax: +1 (0) 000 0000 002
-                </p>
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3">
-                    Links
-                </h5>
-                <p class="mbr-text">
-                    <a class="text-primary" href="https://mobirise.com/">Website builder</a>
-                    <br><a class="text-primary" href="https://mobirise.com/mobirise-free-win.zip">Download for Windows</a>
-                    <br><a class="text-primary" href="https://mobirise.com/mobirise-free-mac.zip">Download for Mac</a>
-                </p>
-            </div>
-        </div>
-        
-    </div>
-</section>
-
-
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
-  <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
-  
-  
+  // Build an email from the form and hand it to the visitor's email app.
+  var form = document.getElementById('contact-form');
+  var note = document.getElementById('form-note');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = form.elements;
+    if (!f.name.value.trim() || !f.email.value.trim()) {
+      note.textContent = 'Please enter your name and email so I can reply.';
+      (f.name.value.trim() ? f.email : f.name).focus();
+      return;
+    }
+    var body = 'Name: ' + f.name.value.trim() + '\n' +
+               'Email: ' + f.email.value.trim() + '\n' +
+               'Phone: ' + (f.phone.value.trim() || 'not given') + '\n\n' +
+               f.message.value.trim();
+    var url = 'mailto:john@appaviationadventures.com' +
+              '?subject=' + encodeURIComponent(f.topic.value + ' inquiry') +
+              '&body=' + encodeURIComponent(body);
+    note.textContent = 'Opening your email app. If nothing happens, email john@appaviationadventures.com directly.';
+    window.location.href = url;
+  });
+</script>
 </body>
 </html>
